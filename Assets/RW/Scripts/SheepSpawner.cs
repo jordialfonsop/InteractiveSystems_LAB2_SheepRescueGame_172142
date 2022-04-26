@@ -34,6 +34,15 @@ public class SheepSpawner : MonoBehaviour
         sheepList.Remove(sheep);
     }
 
+    public void DestroyAllSheep()
+    {
+        foreach (GameObject sheep in sheepList) // 1
+        {
+            Destroy(sheep); // 2
+        }
+
+        sheepList.Clear();
+    }
 
     // Start is called before the first frame update
     void Start()
