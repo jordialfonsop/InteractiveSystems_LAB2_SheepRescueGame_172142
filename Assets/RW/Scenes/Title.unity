@@ -1422,6 +1422,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6742242509010900530, guid: ff9c52423c3a7be49af987edf422bcff,
+        type: 3}
+      propertyPath: rotationspeed.y
+      value: 45
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff9c52423c3a7be49af987edf422bcff, type: 3}
 --- !u!4 &1628133924 stripped
@@ -1742,6 +1747,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742242509010900530, guid: ff9c52423c3a7be49af987edf422bcff,
+        type: 3}
+      propertyPath: rotationspeed.y
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff9c52423c3a7be49af987edf422bcff, type: 3}
