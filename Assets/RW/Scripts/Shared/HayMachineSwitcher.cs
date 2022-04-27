@@ -12,6 +12,11 @@ public class HayMachineSwitcher : MonoBehaviour, IPointerClickHandler
 
     private int selectedIndex;
     
+    void Start(){
+        blueHayMachine.SetActive(true);
+        yellowHayMachine.SetActive(false);
+        redHayMachine.SetActive(false);
+    }
     
     public void OnPointerClick(PointerEventData eventData)
     {
