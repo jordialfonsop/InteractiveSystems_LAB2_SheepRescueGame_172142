@@ -7,8 +7,11 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance; // 1
 
     public AudioClip shootClip; // 2
-    public AudioClip sheepHitClip; // 3
-    public AudioClip sheepDroppedClip; // 4
+    public AudioClip sheepHitClip1;
+    public AudioClip sheepHitClip2;
+    public AudioClip sheepHitClip3;
+    public AudioClip sheepDroppedClip;
+    public AudioClip gameOverClip;
 
     private Vector3 cameraPosition;
     // Start is called before the first frame update
@@ -28,9 +31,24 @@ public class SoundManager : MonoBehaviour
         PlaySound(shootClip);
     }
 
-    public void PlaySheepHitClip()
+    public void PlayGameOverClip()
     {
-        PlaySound(sheepHitClip);
+        PlaySound(gameOverClip);
+    }
+
+    public void PlaySheepHitClip1()
+    {
+        PlaySound(sheepHitClip1);
+    }
+
+    public void PlaySheepHitClip2()
+    {
+        PlaySound(sheepHitClip2);
+    }
+
+    public void PlaySheepHitClip3()
+    {
+        PlaySound(sheepHitClip3);
     }
 
     public void PlaySheepDroppedClip()

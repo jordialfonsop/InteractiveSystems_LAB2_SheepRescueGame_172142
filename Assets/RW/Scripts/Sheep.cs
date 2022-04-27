@@ -41,7 +41,19 @@ public class Sheep : MonoBehaviour
         TweenScale tweenScale = gameObject.AddComponent<TweenScale>();; // 1
         tweenScale.targetScale = 0; // 2
         tweenScale.timeToReachTarget = gotHayDestroyDelay;
-        SoundManager.Instance.PlaySheepHitClip();
+        switch(Random.Range(1, 4)){
+            case 1:
+                SoundManager.Instance.PlaySheepHitClip1();
+            break;
+
+            case 2:
+                SoundManager.Instance.PlaySheepHitClip2();
+            break;
+
+            case 3:
+                SoundManager.Instance.PlaySheepHitClip3();
+            break;
+        }
         GameStateManager.Instance.SavedSheep();
     }
 

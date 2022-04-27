@@ -7,6 +7,8 @@ public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance; // 1
 
+    public AudioSource audio;
+
     [HideInInspector]
     public int sheepSaved; // 2
 
@@ -41,6 +43,8 @@ public class GameStateManager : MonoBehaviour
 
         if (sheepDropped == sheepDroppedBeforeGameOver) // 2
         {
+            audio.mute = true;
+            SoundManager.Instance.PlayGameOverClip();
             GameOver();
         }
     }
